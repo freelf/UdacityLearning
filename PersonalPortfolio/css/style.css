@@ -1,0 +1,28 @@
+body {
+  font-family: 'Lato', sans-serif;
+  color: #2d3c49;
+  font-weight:300;
+}
+.text-muted {
+  color: #7d97ad;
+}
+.text-thin {
+  font-weight: 100;
+}
+.logo {
+  width: 100px;
+  height: 100px;
+}
+.nav {
+  margin-top: 50px;
+}
+hr {
+    border: 0;
+    border-bottom: 2px solid #7d97ad;
+}
+.feature {
+  margin-top: 10px;
+}
+p {
+  word-wrap:break-word;
+}
