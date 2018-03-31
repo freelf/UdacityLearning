@@ -6,8 +6,10 @@
 function makeGrid() {
   $('td').remove();
   $('tr').remove();
-  var inputHeightValues = $("#inputHeight").val();
-  var inputWidthValues = $('#inputWeight').val();
+  let inputHeightValues = $("#inputHeight").val();
+  let inputWidthValues = $('#inputWeight').val();
+  inputHeightValues = inputHeightValues > 100 ? 100 : inputHeightValues;
+  inputWidthValues = inputWidthValues > 100 ? 100 : inputWidthValues;
   let temp = '';
   for (let i = 0; i < inputHeightValues; i++) {
     temp += '<tr>';
@@ -17,6 +19,7 @@ function makeGrid() {
     temp += '</tr>';
   }
   $('#pixelCanvas').append(temp);
+  listenTdClick()
 }
 function listenTdClick() {
   $('td').click(function() {
